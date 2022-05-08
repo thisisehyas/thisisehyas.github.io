@@ -17,16 +17,6 @@
       Virginia Woolf
     </h1>
 
-    <div>
-      <img
-        align="right"
-        src="../images/virginia1.jpg"
-        alt="A picture of Woolf"
-        height="400"
-        width="600"
-      />
-    </div>
-
     <section>
       <br />
       <h2>
@@ -133,3 +123,4 @@
     </div>
   </body>
 </html>
+
