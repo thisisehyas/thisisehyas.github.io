@@ -2,118 +2,245 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Virginia Woolf</title>
-    <!--Link to the external style sheet-->
-    <link rel="stylesheet" href="external.css" />
-    <!--For the emojies-->
-    <script
-      src="https://kit.fontawesome.com/4829e1c1d4.js"
-      crossorigin="anonymous"
-    ></script>
+    <title>Momento Landing Page</title>
   </head>
+  <style>
+    body {
+      background-color: #2c2d34;
+      background: linear-gradient(
+        109.6deg,
+        rgba(0, 0, 0, 0.93) 11.2%,
+        rgb(63, 61, 61) 78.9%
+      );
+      color: #2c2d34;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    }
+
+    hr {
+      width: 90%;
+      background-color: #2c2d34;
+      height: 2px;
+      border: none;
+    }
+    .poster {
+      width: 390px;
+      height: 350px;
+      margin: 0 auto;
+      display: block;
+      border: 2px solid black;
+      margin-top: 10px;
+      border-radius: 10px;
+      box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .nolan-image {
+      width: 130px;
+      height: 150px;
+      border-radius: 10px;
+      position: absolute;
+      top: -95px;
+      right: -7px;
+      border: 1px solid black;
+      box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .container {
+      border: 5px solid #000000;
+      margin: 3% 7%;
+      background-color: #f2910a;
+      border-radius: 10px;
+      box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    header {
+      text-align: center;
+      background-color: rgb(255, 255, 255, 0.5);
+      border: 1px solid #2c2d34;
+      margin: 4px;
+      margin-top: 10px;
+      border-radius: 10px;
+      box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    header > h1 {
+      padding-top: 5px;
+    }
+    header > h2 {
+      padding-bottom: 5px;
+    }
+
+    .middle-container {
+      display: flex;
+    }
+
+    .about {
+      background-color: rgb(255, 255, 255, 0.5);
+      padding: 3px;
+      border: 1px solid #2c2d34;
+      margin: 10px 4px 20px 4px;
+      flex: 1;
+      border-radius: 10px;
+      line-height: 23px;
+      box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .director {
+      background-color: rgb(255, 255, 255, 0.5);
+      padding: 3px;
+      border: 1px solid #2c2d34;
+      margin: 10px 10px 20px 4px;
+      flex: 1;
+      position: relative;
+      border-radius: 10px;
+      line-height: 23px;
+      box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .about > h3,
+    .director > h3 {
+      font-weight: 500;
+    }
+
+    .button {
+      display: block;
+      margin: 0 auto;
+      width: 50%;
+      background-color: rgb(255, 255, 255, 0.5);
+      text-align: center;
+      border: 1px solid #2c2d34;
+      border-radius: 10px;
+      padding: 10px;
+      margin-bottom: 10px;
+      margin-top: 20px;
+      font-size: larger;
+      box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    button {
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      margin-top: 10px;
+      border: 0px;
+      font-size: large;
+      padding: 10px;
+      /* background-color:#9c7d51; */
+      background-color: #ff6f3c;
+      border-radius: 30px;
+      color: #ffffff;
+      transition: all 200ms ease-in-out;
+      box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+      border: 1px solid #ff6f3c;
+    }
+
+    button:hover {
+      border: 1px solid #2c2d34;
+      background-color: rgb(255, 255, 255, 0.7);
+      color: #2c2d34;
+    }
+
+    a {
+      color: #2c2d34;
+      transition: all 200ms ease-in-out;
+    }
+
+    a:hover {
+      color: #3e3ec9;
+    }
+
+    @media screen and (max-width: 652px) {
+      .director h3 {
+        margin-top: 60px;
+      }
+    }
+  </style>
   <body>
-    <h1>
-      <i class="fa-solid fa-shield-heart"></i>
-      Virginia Woolf
-    </h1>
+    <div class="container">
+      <header>
+        <h1>Memento</h1>
+        <h2>A masterpiece from <em>Christopher Nolan</em></h2>
+      </header>
 
-    <section>
-      <br>
-      <h2>
-        <i class="fa-regular fa-address-card"></i>
-        Who was she?
-      </h2>
-      <p>
-        &nbsp;&nbsp; Virginia Woolf was an English writer, considered one of the most
+      <div class="image-container">
+        <img
+          class="poster"
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/093/929/original/memento-hope.jpg?1692388136"
+          alt="Memento Poster"
+        />
+      </div>
+
+      <div class="middle-container">
+        <div class="about">
+          <h3>The Story</h3>
+          <p>
+            <strong>Leonard (Guy Pearce)</strong> is tracking down the man who
+            raped and murdered his wife. The difficulty, however, of locating
+            his wife's killer is compounded by the fact that he suffers from a
+            rare, untreatable form of memory loss. Although he can recall
+            details of life before his accident, Leonard cannot remember what
+            happened fifteen minutes ago, where he's going, or why.
+            <br />
+            "Memento" is rated R for occasional strong profanity, violence (a
+            brutal beating, as well as some gunfire), graphic gore, use of crude
+            sexual slang terms, brief simulated drug use (crack cocaine) and
+            fleeting nudity.
+          </p>
+        </div>
+
+        <div class="director">
+          <h3>The Director</h3>
+          <p>
+            <em>Christopher Edward Nolan</em> CBE (born 30 July 1970) is a
+            British and American filmmaker. Known for their Hollywood
+            blockbusters with complex storytelling, Nolan is considered a
+            leading filmmaker of the 21st century; Their films have grossed $5
+            billion worldwide. The recipient of many accolades, They has been
+            nominated for five Academy Awards, five BAFTA Awards and six Golden
+            Globe Awards. In 2015, They was listed as one of the 100 most
+            influential people in the world by Time, and in 2019, They was
+            appointed Commander of the Order of the British Empire for Their
+            contributions to film.
+            <br />
+
+            <span
+              ><a
+                href="https://en.wikipedia.org/wiki/Christopher_Nolan"
+                target="_blank"
+                >Click here to read more</a
+              ></span
+            >.
+          </p>
+          <img
+            class="nolan-image"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/093/930/original/christopher_nolan.jpeg?1692389444"
+            alt="image of Christopher Nolan"
+          />
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="button">
+        Want to know if you can watch this movie?
         <br />
-        &nbsp;&nbsp; important modernist 20th-century authors and a pioneer in the use of
-        <br />
-        &nbsp;&nbsp; stream of consciousness as a narrative device.
-        <br />
-        &nbsp;&nbsp; She was home-schooled in English classics and Victorian literature from
-        <br />
-        &nbsp;&nbsp; a young age. From 1897 to 1901, she attended the Ladies' Department of
-        <br />
-        &nbsp;&nbsp; King's College London, where she studied classics and history and came
-        <br />
-        &nbsp;&nbsp; into contact with early reformers of women's higher education and the
-        <br />
-        &nbsp;&nbsp; women's rights movement.
-        <br />
-      </p>
-    </section>
-
-    <section>
-      <br />
-      <h2>
-        <i class="fa-solid fa-book"></i>
-        Her Books
-      </h2>
-
-      <ul>
-        <li>A Room Of One's Own</li>
-
-        <li>The Waves</li>
-
-        <li>Orlando</li>
-
-        <li>A Writer's Diary</li>
-
-        <li>Monday or Tuesday</li>
-
-        <li>The Common Reader</li>
-
-        <li>The Lady In The Looking Glass and ...</li>
-      </ul>
-    </section>
-
-    <section>
-      <br />
-      <h2>
-        <i class="fa-solid fa-pencil"></i>
-        Her Quotes
-      </h2>
-
-      <ul>
-        <li>
-          “I thought how unpleasant it is to be locked out; <br />
-          and I thought how it is worse, perhaps, to be locked in.”
-        </li>
-
-        <li>
-          “Lock up your libraries if you like; <br />
-          But there is no gate, no lock, no bolt, that you can set upon the
-          freedom of my mind.”
-        </li>
-
-        <li>“To enjoy freedom we have to control ourselves.”</li>
-
-        <li>
-          “As a woman I have no country. As a woman my country is the whole
-          world.”
-        </li>
-
-        <li>“Some people go to priests; others to poetry; I to my friends.”</li>
-
-        <li>
-          “A woman must have money and a room of her own if she is to write
-          fiction.”
-        </li>
-      </ul>
-    </section>
-
-    <div>
-      <br />
-      <hr>
-      <footer>
-          <i class="fa-solid fa-link"></i>
-          For more information about this amazing woman, you can check out
-          <a href="https://en.wikipedia.org/wiki/Virginia_Woolf">this website</a
-          >.
-      </footer>
+        <button>Click Here</button>
+      </div>
     </div>
+
+    <script>
+      function ableToWatch() {
+        let age = prompt("How old are you?");
+        if (age < 17) {
+          alert("Sorry. You are too young to watch an R rated movie :(");
+        } else if (age >= 17) {
+          alert("You can watch this movie. Enjoy! :)");
+        }
+      }
+
+      let button = document.querySelector("button");
+      button.addEventListener("click", ableToWatch);
+    </script>
   </body>
 </html>
+
