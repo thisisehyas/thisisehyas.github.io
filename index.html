@@ -3,244 +3,117 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Momento Landing Page</title>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style-top.css" />
+    <link rel="stylesheet" href="css/style-bottom.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
   </head>
-  <style>
-    body {
-      background-color: #2c2d34;
-      background: linear-gradient(
-        109.6deg,
-        rgba(0, 0, 0, 0.93) 11.2%,
-        rgb(63, 61, 61) 78.9%
-      );
-      color: #2c2d34;
-      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    }
-
-    hr {
-      width: 90%;
-      background-color: #2c2d34;
-      height: 2px;
-      border: none;
-    }
-    .poster {
-      width: 390px;
-      height: 350px;
-      margin: 0 auto;
-      display: block;
-      border: 2px solid black;
-      margin-top: 10px;
-      border-radius: 10px;
-      box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
-    }
-
-    .nolan-image {
-      width: 130px;
-      height: 150px;
-      border-radius: 10px;
-      position: absolute;
-      top: -95px;
-      right: -7px;
-      border: 1px solid black;
-      box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
-    }
-
-    .container {
-      border: 5px solid #000000;
-      margin: 3% 7%;
-      background-color: #f2910a;
-      border-radius: 10px;
-      box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
-    }
-
-    header {
-      text-align: center;
-      background-color: rgb(255, 255, 255, 0.5);
-      border: 1px solid #2c2d34;
-      margin: 4px;
-      margin-top: 10px;
-      border-radius: 10px;
-      box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
-    }
-
-    header > h1 {
-      padding-top: 5px;
-    }
-    header > h2 {
-      padding-bottom: 5px;
-    }
-
-    .middle-container {
-      display: flex;
-    }
-
-    .about {
-      background-color: rgb(255, 255, 255, 0.5);
-      padding: 3px;
-      border: 1px solid #2c2d34;
-      margin: 10px 4px 20px 4px;
-      flex: 1;
-      border-radius: 10px;
-      line-height: 23px;
-      box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
-    }
-
-    .director {
-      background-color: rgb(255, 255, 255, 0.5);
-      padding: 3px;
-      border: 1px solid #2c2d34;
-      margin: 10px 10px 20px 4px;
-      flex: 1;
-      position: relative;
-      border-radius: 10px;
-      line-height: 23px;
-      box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
-    }
-
-    .about > h3,
-    .director > h3 {
-      font-weight: 500;
-    }
-
-    .button {
-      display: block;
-      margin: 0 auto;
-      width: 50%;
-      background-color: rgb(255, 255, 255, 0.5);
-      text-align: center;
-      border: 1px solid #2c2d34;
-      border-radius: 10px;
-      padding: 10px;
-      margin-bottom: 10px;
-      margin-top: 20px;
-      font-size: larger;
-      box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
-    }
-
-    button {
-      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-      margin-top: 10px;
-      border: 0px;
-      font-size: large;
-      padding: 10px;
-      /* background-color:#9c7d51; */
-      background-color: #ff6f3c;
-      border-radius: 30px;
-      color: #ffffff;
-      transition: all 200ms ease-in-out;
-      box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
-      border: 1px solid #ff6f3c;
-    }
-
-    button:hover {
-      border: 1px solid #2c2d34;
-      background-color: rgb(255, 255, 255, 0.7);
-      color: #2c2d34;
-    }
-
-    a {
-      color: #2c2d34;
-      transition: all 200ms ease-in-out;
-    }
-
-    a:hover {
-      color: #3e3ec9;
-    }
-
-    @media screen and (max-width: 652px) {
-      .director h3 {
-        margin-top: 60px;
-      }
-    }
-  </style>
   <body>
-    <div class="container">
-      <header>
-        <h1>Memento</h1>
-        <h2>A masterpiece from <em>Christopher Nolan</em></h2>
-      </header>
-
-      <div class="image-container">
-        <img
-          class="poster"
-          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/093/929/original/memento-hope.jpg?1692388136"
-          alt="Memento Poster"
-        />
-      </div>
-
-      <div class="middle-container">
-        <div class="about">
-          <h3>The Story</h3>
-          <p>
-            <strong>Leonard (Guy Pearce)</strong> is tracking down the man who
-            raped and murdered his wife. The difficulty, however, of locating
-            his wife's killer is compounded by the fact that he suffers from a
-            rare, untreatable form of memory loss. Although he can recall
-            details of life before his accident, Leonard cannot remember what
-            happened fifteen minutes ago, where he's going, or why.
-            <br />
-            "Memento" is rated R for occasional strong profanity, violence (a
-            brutal beating, as well as some gunfire), graphic gore, use of crude
-            sexual slang terms, brief simulated drug use (crack cocaine) and
-            fleeting nudity.
-          </p>
+    <section class="top">
+      
+      <!--Navigation Bar section-->
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button
+              type="button"
+              class="navbar-toggle"
+              data-toggle="collapse"
+              data-target="#myNavbar"
+            >
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">My Website</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="Index.html">About Me</a></li>
+              <li><a href="Portfolio.html">Portfolio</a></li>
+              <li><a href="Services.html">Services</a></li>
+              <li><a href="Contact.html">Contact</a></li>
+            </ul>
+          </div>
         </div>
+      </nav>
 
-        <div class="director">
-          <h3>The Director</h3>
-          <p>
-            <em>Christopher Edward Nolan</em> CBE (born 30 July 1970) is a
-            British and American filmmaker. Known for their Hollywood
-            blockbusters with complex storytelling, Nolan is considered a
-            leading filmmaker of the 21st century; Their films have grossed $5
-            billion worldwide. The recipient of many accolades, They has been
-            nominated for five Academy Awards, five BAFTA Awards and six Golden
-            Globe Awards. In 2015, They was listed as one of the 100 most
-            influential people in the world by Time, and in 2019, They was
-            appointed Commander of the Order of the British Empire for Their
-            contributions to film.
-            <br />
+      <!--Profile Picture section-->
+      <div class="middle">
+        <div class="container">
+          <img class="profile" 
+          src="images/image1.jpeg" 
+          alt="picture of a programmer" />
+  </div>
+      
+    </div>
+    <!--Headers under the profile picture-->
+    <h1 class="for-name"><strong>Maryam Ehyaaee</strong></h1>
+    <h2 class="profession"><strong>Front-end Developer</strong></h2>
+     
+      
+    </section>
 
-            <span
-              ><a
-                href="https://en.wikipedia.org/wiki/Christopher_Nolan"
-                target="_blank"
-                >Click here to read more</a
-              ></span
-            >.
-          </p>
-          <img
-            class="nolan-image"
-            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/093/930/original/christopher_nolan.jpeg?1692389444"
-            alt="image of Christopher Nolan"
-          />
-        </div>
+    <section class="bottom">
+      <div class="about-me">
+        <h2>About Me</h2>
+        I'm Maryam Ehyaaee, a web developer. I'm currently working on front-end
+        and as I'm crazy about the web, I want to become a full-stack developer
+        and now I'm trying to learn about back-end as improving my front-end
+        skills. I'm hoping to get some projects and work as a freelancer
+        hopefully not just with Iranian costumers as I like to work with foreign
+        countries because it gives me a lot of challenges and space to grow.
+        <br />
+        I also like to have a fixed job and not have to worry about the
+        stability of my income. So I might consider getting hierd somewhere too.
+
+        <h3>Education</h3>
+        <b>BNUT Computer Engineering</b>, 1400 - 1404
       </div>
 
       <hr />
 
-      <div class="button">
-        Want to know if you can watch this movie?
-        <br />
-        <button>Click Here</button>
+      <div class="Skills">
+        <h2>Skills</h2>
+        <ul>
+          <li class="col-lg-3"><strong>HTML5</strong></li>
+          <li class="col-lg-3"><strong>CSS3</strong></li>
+          <li class="col-lg-3"><strong>JavaScript</strong></li>
+          <li class="col-lg-3"><strong>TypeScript</strong></li>
+          <li class="col-lg-3"><strong>Responsive web design</strong></li>
+          <li class="col-lg-3"><strong>Web Accessibility</strong></li>
+          <li class="col-lg-3"><strong>Bootstrap</strong></li>
+          <li class="col-lg-3"><strong>Python</strong></li>
+          <li class="col-lg-3"><strong>Java</strong></li>
+          <li class="col-lg-3"><strong>C++</strong></li>
+          <li class="col-lg-4"><strong>Object-Oriented Programming</strong></li>
+          <li class="col-lg-6"><strong>Algorithm Design and Data Structure</strong></li>
+          <li class="col-lg-6"><strong>English Language C1</strong></li>
+        </ul>
       </div>
-    </div>
+      <hr />
 
-    <script>
-      function ableToWatch() {
-        let age = prompt("How old are you?");
-        if (age < 17) {
-          alert("Sorry. You are too young to watch an R rated movie :(");
-        } else if (age >= 17) {
-          alert("You can watch this movie. Enjoy! :)");
-        }
-      }
+      <div class="interested">
+        <h3>Are you interested?</h3>
+        <button class="btn-success" onclick="window.location.href = 'Contact.html';">
+          Contact Me
+        </button>
+      </div>
+    </section>
 
-      let button = document.querySelector("button");
-      button.addEventListener("click", ableToWatch);
-    </script>
+    <!-- Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="JS/script.js"></script>
   </body>
 </html>
-
