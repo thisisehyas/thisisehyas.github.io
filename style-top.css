@@ -1,0 +1,130 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    background: rgb(199, 81, 81) !important;
+}
+
+.profile{
+    width: 35%;
+    margin: auto;
+    margin-top: 10%;
+    border-radius: 100%;
+    border: 10px solid rgba(199, 81, 81, 0.8);
+}
+
+.middle{
+    text-align: center;
+}
+
+
+
+.for-name{
+    font-size: 180%;
+    font-family: monospace,'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: #000000;
+    color: #f0f8ff;
+}
+
+.profession{
+    font-size: 150%;
+    font-family: monospace,'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: #000000;    
+    color: #f0f8ff;
+    margin-top: 0;
+}
+
+.top{
+    background-color: #3d1f75;
+    background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/093/981/original/hope.png?1692457867);
+    background-size: cover;
+    background-position: center;
+    padding: 5%;
+}
+
+ 
+.navbar{
+    background-color: transparent !important;
+    border: 0px !important;   
+}
+
+.navbar-brand{
+    font-size: 200% !important;
+    color: #f0f8ff !important;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
+/* .navbar-brand:hover{
+    background-color: rgba(199, 81, 81, 0.6) !important;
+    border-radius: 3%;
+} */
+
+.icon-bar{
+    background-color: #f0f8ff !important;
+}
+
+.navbar-toggle{
+    background: transparent !important;
+    border: 0 !important;
+    margin-top: 1.5% !important;
+    margin-right: 1.5% !important;
+}
+
+.navbar-toggle:hover{
+    background-color: rgba(199, 81, 81, 0.8) !important;
+    border-radius: 10%;
+}
+
+#myNavbar li a{
+    color: #000000;
+    font-size: 130%;
+}
+
+#myNavbar{
+    background-color: rgb(199, 110, 110);
+}
+
+#myNavbar li a:hover{
+    color: white;
+}
+
+.white-bg {
+    background-color: rgba(199, 81, 81) !important;
+}
+
+.menu-open {
+    background-color: rgba(199, 81, 81) !important;
+}
+
+@media screen and (min-width: 768px) {
+    .profile{
+        width: auto;
+    }
+    .middle{
+        display: flex;
+    }
+
+    .for-name{
+        font-size: 200%;
+    }
+    .profession{
+        font-size: 170%;
+    }
+
+    .navbar{
+        background-color: rgba(199, 81, 81) !important;
+    }
+
+    #myNavbar{
+        background-color: rgba(199, 81, 81);
+    }
+}
+    
+
+@media screen and (min-width: 1000px) {
+    .top {
+       padding-top: 0%;
+       padding-bottom: 5%;
+    }
+ }

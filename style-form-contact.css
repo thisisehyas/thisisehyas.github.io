@@ -1,0 +1,48 @@
+.form{
+    border: 2px solid #3d1f75;
+    padding: 5%;
+    background-color: rgb(61, 31, 117, 0.4);
+    margin: 20px;
+    
+}
+  
+form label {
+    margin-right: 10px;
+}
+  
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+  
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+  
+@media screen and (min-width: 800px) {
+    .btn-success{
+        padding: 10px;
+    }
+    .form{
+        padding-top: 25px;
+        padding-bottom: 4px;
+        width: 50%; 
+        float: left; 
+    }
+    
+    .other-ways {
+        width: 40%; 
+        margin-left: 60%; 
+    }
+
+    .bottom{
+        background-size:contain;
+    }
+}
